@@ -3,7 +3,7 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-  let map = new Map();
+    let map = new Map();
 
   for(let ch of nums){
     map.set(ch , (map.get(ch)||0)+1)
@@ -16,8 +16,5 @@ var majorityElement = function(nums) {
   }
   }
   return map;
+  
 };
-// let map = new Map()
-//     for(let num of nums){
-//         map.set(num,(map.get(nums||0)+1));
-//         return map;
